@@ -24,6 +24,7 @@ struct ArticleDetailView: View {
                     Text(article.title)
                         .font(.system(.title, design: .rounded))
                         .fontWeight(.black)
+                        .foregroundStyle(.red)
                         .multilineTextAlignment(.center)
                         .lineLimit(3)
                         .padding(.bottom, 0)
@@ -64,3 +65,5 @@ struct ArticleDetailView: View {
 #Preview {
     ArticleDetailView(article: articles[0])
 }
+
+
