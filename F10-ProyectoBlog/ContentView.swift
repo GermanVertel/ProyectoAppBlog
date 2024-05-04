@@ -41,7 +41,7 @@ struct ArticleRow: View {
             Text("Creado por \(article.author)".uppercased())
                 .font(.subheadline)
                 .foregroundColor(.secondary)
-                .padding(.bottom, 0)
+                .padding(.bottom, 2)
             
             Text("\(article.url)".lowercased())
                 .font(.subheadline)
