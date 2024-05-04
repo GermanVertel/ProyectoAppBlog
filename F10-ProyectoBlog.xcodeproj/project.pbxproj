@@ -12,6 +12,7 @@
 		062433072BE66F2600390570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062433062BE66F2600390570 /* Assets.xcassets */; };
 		0624330A2BE66F2600390570 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062433092BE66F2600390570 /* Preview Assets.xcassets */; };
 		062433112BE6850000390570 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062433102BE6850000390570 /* Article.swift */; };
+		062433132BE69DC000390570 /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062433122BE69DC000390570 /* ArticleDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		062433062BE66F2600390570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		062433092BE66F2600390570 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		062433102BE6850000390570 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		062433122BE69DC000390570 /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 		062432F62BE66F2400390570 = {
 			isa = PBXGroup;
 			children = (
+				062433122BE69DC000390570 /* ArticleDetailView.swift */,
 				062433012BE66F2400390570 /* F10-ProyectoBlog */,
 				062433002BE66F2400390570 /* Products */,
 			);
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062433132BE69DC000390570 /* ArticleDetailView.swift in Sources */,
 				062433052BE66F2400390570 /* ContentView.swift in Sources */,
 				062433032BE66F2400390570 /* F10_ProyectoBlogApp.swift in Sources */,
 				062433112BE6850000390570 /* Article.swift in Sources */,
