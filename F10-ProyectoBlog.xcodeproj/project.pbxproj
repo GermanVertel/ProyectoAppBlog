@@ -39,7 +39,6 @@
 		062432F62BE66F2400390570 = {
 			isa = PBXGroup;
 			children = (
-				062433122BE69DC000390570 /* ArticleDetailView.swift */,
 				062433012BE66F2400390570 /* F10-ProyectoBlog */,
 				062433002BE66F2400390570 /* Products */,
 			);
@@ -59,6 +58,7 @@
 				062433022BE66F2400390570 /* F10_ProyectoBlogApp.swift */,
 				062433042BE66F2400390570 /* ContentView.swift */,
 				062433102BE6850000390570 /* Article.swift */,
+				062433122BE69DC000390570 /* ArticleDetailView.swift */,
 				062433062BE66F2600390570 /* Assets.xcassets */,
 				062433082BE66F2600390570 /* Preview Content */,
 			);
