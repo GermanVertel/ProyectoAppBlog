@@ -13,11 +13,16 @@ struct ContentView: View {
         
         NavigationStack {
             List(articles) {article in
-                NavigationLink(destination: ArticleDetailView(article: article)) {
+                ZStack{
                     ArticleRow(article: article)
+                    
+                    NavigationLink(destination:ArticleDetailView(article: article)) {
+                        EmptyView()
                         
+                    }
+                    .opacity(0)
+                    .listRowSeparator(.hidden)
                 }
-                .listRowSeparator(.hidden)
             }
             
             .listStyle(.plain)
