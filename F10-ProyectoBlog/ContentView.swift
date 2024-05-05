@@ -9,13 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        List(articles) {article in
-            
-            ArticleRow(article: article)
+        
+        
+        NavigationStack {
+            List(articles) {article in
+                NavigationLink(destination: ArticleDetailView(article: article)) {
+                    ArticleRow(article: article)
+                        
+                }
                 .listRowSeparator(.hidden)
+            }
+            
+            .listStyle(.plain)
+            .navigationTitle("El Diario de German")
             
         }
-        .listStyle(.plain)
+       
     }
 }
         
@@ -37,7 +46,7 @@ struct ArticleRow: View {
                 .cornerRadius(5)
             
             Text(article.title)
-                .font(.system(.title, design: .rounded))
+                .font(.system(.title3, design: .rounded))
                 .fontWeight(.black)
                 .lineLimit(3)
                 .padding(.bottom, 0)
@@ -47,10 +56,10 @@ struct ArticleRow: View {
                 .foregroundColor(.secondary)
                 .padding(.bottom, 0)
             
-            Text("\(article.url)".lowercased())
+            /*Text("\(article.url)".lowercased())
                 .font(.subheadline)
                 .foregroundColor(.secondary)
-                .padding(.bottom, 0)
+                .padding(.bottom, 0)*/
             
             HStack(spacing: 3) {
                 ForEach(1...(article.rating), id: \.self) { _ in
@@ -63,6 +72,7 @@ struct ArticleRow: View {
             Text(article.excerpt)
                 .font(.subheadline)
                 .foregroundColor(.secondary)
+                .lineLimit(3)
             
         }
     }

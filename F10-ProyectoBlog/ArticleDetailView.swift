@@ -52,7 +52,7 @@ struct ArticleDetailView: View {
                         
                 }
                 .font(.body)
-                .padding()
+                .padding(16)
                 .lineLimit(100)
                 .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                 
@@ -63,7 +63,11 @@ struct ArticleDetailView: View {
 }
 
 #Preview {
-    ArticleDetailView(article: articles[0])
+    
+    NavigationStack {
+        ArticleDetailView(article: articles[0])
+            .navigationTitle("Articulo")
+    }
 }
 
 
