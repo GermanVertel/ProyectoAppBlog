@@ -59,6 +59,7 @@ struct ArticleDetailView: View {
             }
             
         }
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
